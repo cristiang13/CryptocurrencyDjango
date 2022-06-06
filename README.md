@@ -5,7 +5,7 @@ pip install virtualenv myenv-
 luego se activa el entorno virtual-
 myenv/script/
 activate
-dentro de la carpeta se instaló django y django_filter y se colocó el proyecto 
-crear una base de datos en mariadb llamada wtFinance
-luego en utils/cryptocurrencyUtil.py introducir la api-key de usuario de la aplicacion coinmarketcap 
-debido a restricciones de usuario solo se realizó la prueba para el endpoint https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
+dentro de la carpeta se instaló django y django_filter y se colocó el proyecto-- 
+crear una base de datos en mariadb llamada wtFinance---
+luego en utils/cryptocurrencyUtil.py introducir la api-key de usuario de la aplicacion coinmarketcap --
+Debido a restricciones de usuario solo se realizó la prueba para el endpoint https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
