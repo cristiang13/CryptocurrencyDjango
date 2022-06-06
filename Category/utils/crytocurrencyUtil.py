@@ -10,7 +10,8 @@ parameters = {
 }
 headers = {
   'Accepts': 'application/json',
-  'X-CMC_PRO_API_KEY': '0b768e00-0e52-4ea9-93fd-ff1cbbd9f733',
+  #adicionar api key de coinmarketcap
+  'X-CMC_PRO_API_KEY': '',
 }
 
 
