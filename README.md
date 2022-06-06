@@ -1,9 +1,9 @@
 # CryptocurrencyDjango
-Se creo aplicacion web usando los siguientes framework: Django, Bootstrap(front-end); librerias: jquery, datatables; gestor de base de datos(Mysql):Mariadb
+Se creo aplicacion web usando los siguientes framework: Django, Bootstrap(front-end); librerias: jquery, datatables; gestor de base de datos(Mysql):Mariadb.
 Para ejecutar la app primero se crea un carpeta donde se intalará un entorno virtual:
-pip install virtualenv myenv
-luego se activa el entorno virtual
-myenv/ cd script
+pip install virtualenv myenv-
+luego se activa el entorno virtual-
+myenv/ cd script--
 activate
 dentro de la carpeta se instaló django y django_filter y se colocó el proyecto 
 crear una base de datos en mariadb llamada wtFinance
