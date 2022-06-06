@@ -1,0 +1,28 @@
+{% extends 'template.html' %}
+{% block content %}
+
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+    </div>
+        <div class="col-sm-6">
+            <div class="card text-center">
+                <div class="card-header">
+                Cryptocurrency
+                </div>
+                <div class="card-body">
+                <h5 class="card-title">Nombre de moneda: {{coin.name}}</h5>
+                <p class="card-text">Precio corriente: ${{coin.price}}</p>
+                <p class="card-text">Porcentaje de cambio a las 24h: {{coin.percent_change_24h}}%</p>
+                <p class="card-text">Fecha de almacenamiento: {{coin.created_at}}</p>
+                
+                </div>
+            </div>
+        </div>
+    <div class="col-sm-3">
+    </div>
+   </div>
+
+</div>
+ {% endblock %}

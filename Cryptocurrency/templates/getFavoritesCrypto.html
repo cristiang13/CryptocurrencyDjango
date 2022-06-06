@@ -1,0 +1,50 @@
+{% extends 'template.html' %}
+{% block content %}
+
+<div class="container">
+  <br>
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong class="text-dark">{{ message }}</strong>
+</div>
+{% endfor %}
+{% endif %}
+<div class="header">
+    <h2>Cryptocurrence Favorite</h2>
+</div>
+<br>
+<table id="example" class="table display">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Porcentaje de cambio (24h)</th>
+        <th>Fecha</th>
+        <th>Acciones</th>    
+      </tr>
+    </thead>
+    <tbody>
+        {% for coin in cryptocurrencys %}
+            {% if coin.favorite %}
+                <tr>
+                    <td></td>
+                    <td>{{coin.name}}</td>
+                    <td>${{coin.price}}</td>
+                    <td>{{coin.percent_change_24h}}%</td>
+                    <td>{{coin.created_at}}</td>
+                    <td><a href={% url 'getCoin' coin.id %} class="btn btn-light" >Ver</a>
+                    <a href={% url 'deletefavorite' coin.id %} class="btn btn-info">Eliminar</a>
+                    </td>
+
+                </tr>
+            {% endif %}
+        {% endfor %}
+      
+    </tbody>
+  </tabl</table>
+  <br>
+ </div>
+ {% endblock %}
